@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F59E6CF5230AC8BB002FF23E /* No_Escape_in_Full_Screen.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = F59E6CF4230AC8BB002FF23E /* No_Escape_in_Full_Screen.entitlements */; };
+		F59E6CF7230AC8BB002FF23E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59E6CF6230AC8BB002FF23E /* AppDelegate.swift */; };
+		F59E6CFA230AC8BB002FF23E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59E6CF8230AC8BB002FF23E /* Main.storyboard */; };
+		F59E6CFC230AC8BB002FF23E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59E6CFB230AC8BB002FF23E /* ViewController.swift */; };
+		F59E6D05230AC8BC002FF23E /* No Escape in Full Screen Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F59E6D04230AC8BC002FF23E /* No Escape in Full Screen Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F59E6D0A230AC8BC002FF23E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59E6D09230AC8BC002FF23E /* Cocoa.framework */; };
+		F59E6D0D230AC8BC002FF23E /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59E6D0C230AC8BC002FF23E /* SafariExtensionHandler.swift */; };
+		F59E6D0F230AC8BC002FF23E /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59E6D0E230AC8BC002FF23E /* SafariExtensionViewController.swift */; };
+		F59E6D12230AC8BC002FF23E /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F59E6D10230AC8BC002FF23E /* SafariExtensionViewController.xib */; };
+		F59E6D15230AC8BC002FF23E /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = F59E6D14230AC8BC002FF23E /* script.js */; };
+		F59E6D24230ADC1D002FF23E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59E6D23230ADC1D002FF23E /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F59E6D06230AC8BC002FF23E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F59E6CE9230AC8BB002FF23E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F59E6D03230AC8BC002FF23E;
+			remoteInfo = "No Escape in Full Screen Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F59E6D1E230AC8BC002FF23E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F59E6D05230AC8BC002FF23E /* No Escape in Full Screen Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F59E6CF1230AC8BB002FF23E /* No Escape in Full Screen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "No Escape in Full Screen.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F59E6CF4230AC8BB002FF23E /* No_Escape_in_Full_Screen.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = No_Escape_in_Full_Screen.entitlements; sourceTree = "<group>"; };
+		F59E6CF6230AC8BB002FF23E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F59E6CF9230AC8BB002FF23E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F59E6CFB230AC8BB002FF23E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F59E6CFF230AC8BC002FF23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F59E6D04230AC8BC002FF23E /* No Escape in Full Screen Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "No Escape in Full Screen Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F59E6D09230AC8BC002FF23E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F59E6D0C230AC8BC002FF23E /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		F59E6D0E230AC8BC002FF23E /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		F59E6D11230AC8BC002FF23E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		F59E6D13230AC8BC002FF23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F59E6D14230AC8BC002FF23E /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		F59E6D18230AC8BC002FF23E /* No_Escape_in_Full_Screen_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = No_Escape_in_Full_Screen_Extension.entitlements; sourceTree = "<group>"; };
+		F59E6D23230ADC1D002FF23E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F59E6CEE230AC8BB002FF23E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59E6D01230AC8BC002FF23E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59E6D0A230AC8BC002FF23E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F59E6CE8230AC8BB002FF23E = {
+			isa = PBXGroup;
+			children = (
+				F59E6CF3230AC8BB002FF23E /* No Escape in Full Screen */,
+				F59E6D0B230AC8BC002FF23E /* No Escape in Full Screen Extension */,
+				F59E6D08230AC8BC002FF23E /* Frameworks */,
+				F59E6CF2230AC8BB002FF23E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F59E6CF2230AC8BB002FF23E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F59E6CF1230AC8BB002FF23E /* No Escape in Full Screen.app */,
+				F59E6D04230AC8BC002FF23E /* No Escape in Full Screen Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F59E6CF3230AC8BB002FF23E /* No Escape in Full Screen */ = {
+			isa = PBXGroup;
+			children = (
+				F59E6D23230ADC1D002FF23E /* Assets.xcassets */,
+				F59E6CF4230AC8BB002FF23E /* No_Escape_in_Full_Screen.entitlements */,
+				F59E6CF6230AC8BB002FF23E /* AppDelegate.swift */,
+				F59E6CF8230AC8BB002FF23E /* Main.storyboard */,
+				F59E6CFB230AC8BB002FF23E /* ViewController.swift */,
+				F59E6CFF230AC8BC002FF23E /* Info.plist */,
+			);
+			path = "No Escape in Full Screen";
+			sourceTree = "<group>";
+		};
+		F59E6D08230AC8BC002FF23E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F59E6D09230AC8BC002FF23E /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F59E6D0B230AC8BC002FF23E /* No Escape in Full Screen Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F59E6D0C230AC8BC002FF23E /* SafariExtensionHandler.swift */,
+				F59E6D0E230AC8BC002FF23E /* SafariExtensionViewController.swift */,
+				F59E6D10230AC8BC002FF23E /* SafariExtensionViewController.xib */,
+				F59E6D13230AC8BC002FF23E /* Info.plist */,
+				F59E6D14230AC8BC002FF23E /* script.js */,
+				F59E6D18230AC8BC002FF23E /* No_Escape_in_Full_Screen_Extension.entitlements */,
+			);
+			path = "No Escape in Full Screen Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F59E6CF0230AC8BB002FF23E /* No Escape in Full Screen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F59E6D1F230AC8BC002FF23E /* Build configuration list for PBXNativeTarget "No Escape in Full Screen" */;
+			buildPhases = (
+				F59E6CED230AC8BB002FF23E /* Sources */,
+				F59E6CEE230AC8BB002FF23E /* Frameworks */,
+				F59E6CEF230AC8BB002FF23E /* Resources */,
+				F59E6D1E230AC8BC002FF23E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F59E6D07230AC8BC002FF23E /* PBXTargetDependency */,
+			);
+			name = "No Escape in Full Screen";
+			productName = "No Escape in Full Screen";
+			productReference = F59E6CF1230AC8BB002FF23E /* No Escape in Full Screen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F59E6D03230AC8BC002FF23E /* No Escape in Full Screen Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F59E6D1B230AC8BC002FF23E /* Build configuration list for PBXNativeTarget "No Escape in Full Screen Extension" */;
+			buildPhases = (
+				F59E6D00230AC8BC002FF23E /* Sources */,
+				F59E6D01230AC8BC002FF23E /* Frameworks */,
+				F59E6D02230AC8BC002FF23E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "No Escape in Full Screen Extension";
+			productName = "No Escape in Full Screen Extension";
+			productReference = F59E6D04230AC8BC002FF23E /* No Escape in Full Screen Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F59E6CE9230AC8BB002FF23E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Vlad Moroz";
+				TargetAttributes = {
+					F59E6CF0230AC8BB002FF23E = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					F59E6D03230AC8BC002FF23E = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = F59E6CEC230AC8BB002FF23E /* Build configuration list for PBXProject "No Escape in Full Screen" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F59E6CE8230AC8BB002FF23E;
+			productRefGroup = F59E6CF2230AC8BB002FF23E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F59E6CF0230AC8BB002FF23E /* No Escape in Full Screen */,
+				F59E6D03230AC8BC002FF23E /* No Escape in Full Screen Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F59E6CEF230AC8BB002FF23E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59E6CF5230AC8BB002FF23E /* No_Escape_in_Full_Screen.entitlements in Resources */,
+				F59E6D24230ADC1D002FF23E /* Assets.xcassets in Resources */,
+				F59E6CFA230AC8BB002FF23E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59E6D02230AC8BC002FF23E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59E6D12230AC8BC002FF23E /* SafariExtensionViewController.xib in Resources */,
+				F59E6D15230AC8BC002FF23E /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F59E6CED230AC8BB002FF23E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59E6CFC230AC8BB002FF23E /* ViewController.swift in Sources */,
+				F59E6CF7230AC8BB002FF23E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59E6D00230AC8BC002FF23E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59E6D0F230AC8BC002FF23E /* SafariExtensionViewController.swift in Sources */,
+				F59E6D0D230AC8BC002FF23E /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F59E6D07230AC8BC002FF23E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F59E6D03230AC8BC002FF23E /* No Escape in Full Screen Extension */;
+			targetProxy = F59E6D06230AC8BC002FF23E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F59E6CF8230AC8BB002FF23E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F59E6CF9230AC8BB002FF23E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F59E6D10230AC8BC002FF23E /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F59E6D11230AC8BC002FF23E /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F59E6D19230AC8BC002FF23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F59E6D1A230AC8BC002FF23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F59E6D1C230AC8BC002FF23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "No Escape in Full Screen Extension/No_Escape_in_Full_Screen_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "No Escape in Full Screen Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Vlad-Moroz.No-Escape-in-Full-Screen-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F59E6D1D230AC8BC002FF23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "No Escape in Full Screen Extension/No_Escape_in_Full_Screen_Extension.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "No Escape in Full Screen Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Vlad-Moroz.No-Escape-in-Full-Screen-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F59E6D20230AC8BC002FF23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "No Escape in Full Screen/No_Escape_in_Full_Screen.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J66P7K6X4P;
+				INFOPLIST_FILE = "No Escape in Full Screen/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Vlad-Moroz.No-Escape-in-Full-Screen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F59E6D21230AC8BC002FF23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "No Escape in Full Screen/No_Escape_in_Full_Screen.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = J66P7K6X4P;
+				INFOPLIST_FILE = "No Escape in Full Screen/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Vlad-Moroz.No-Escape-in-Full-Screen";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F59E6CEC230AC8BB002FF23E /* Build configuration list for PBXProject "No Escape in Full Screen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F59E6D19230AC8BC002FF23E /* Debug */,
+				F59E6D1A230AC8BC002FF23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F59E6D1B230AC8BC002FF23E /* Build configuration list for PBXNativeTarget "No Escape in Full Screen Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F59E6D1C230AC8BC002FF23E /* Debug */,
+				F59E6D1D230AC8BC002FF23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F59E6D1F230AC8BC002FF23E /* Build configuration list for PBXNativeTarget "No Escape in Full Screen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F59E6D20230AC8BC002FF23E /* Debug */,
+				F59E6D21230AC8BC002FF23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F59E6CE9230AC8BB002FF23E /* Project object */;
+}
